@@ -18,3 +18,11 @@ body {
   color: white;
   padding: 25px 60px;
 }
+
+.cart {
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
