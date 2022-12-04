@@ -11,6 +11,7 @@ body {
 /* !Navbar styles */
 
 .navbar {
+  display: flex;
   background-color: #212529;
   color: white;
   padding: 25px 60px;
