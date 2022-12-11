@@ -50,3 +50,8 @@ body {
   border: 2px solid #212529;
   border-radius: 4px;
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
