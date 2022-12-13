@@ -52,6 +52,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
 .item {
   border: 2px solid #212529;
   border-radius: 4px;
