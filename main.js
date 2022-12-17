@@ -55,3 +55,7 @@ let generateShop = () => {
 };
 
 generateShop();
+
+let increment = () => {};
+let decrement = () => {};
+let update = () => {};
