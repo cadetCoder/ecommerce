@@ -56,6 +56,10 @@ let generateShop = () => {
 
 generateShop();
 
-let increment = () => {};
-let decrement = () => {};
+let increment = (id) => {
+  console.log(id);
+};
+let decrement = (id) => {
+  console.log(id);
+};
 let update = () => {};
