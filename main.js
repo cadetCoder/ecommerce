@@ -23,7 +23,7 @@ let shopItemsData = [
     img: "images/img-3.jpg"
   },
   {
-    id: "asdf",
+    id: "asyuidf",
     name: "Mens Suit",
     price: "351",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
@@ -43,9 +43,9 @@ let generateShop = () => {
         <div class="price-quantity">
           <h2>$ ${price}</h2>
           <div class="buttons">
-            <i onCLick="decrement()" class="bi bi-dash-lg"></i>
+            <i onCLick="decrement(${id})" class="bi bi-dash-lg"></i>
             <div id=${id} class="quantity">0</div>
-            <i onCLick="increment()" class="bi bi-plus-lg"></i>
+            <i onCLick="increment(${id})" class="bi bi-plus-lg"></i>
           </div>
         </div>
       </div>
