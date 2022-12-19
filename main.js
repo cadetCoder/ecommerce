@@ -57,7 +57,8 @@ let generateShop = () => {
 generateShop();
 
 let increment = (id) => {
-  console.log(id);
+  let selectedItem = id;
+  console.log(selectedItem.id);
 };
 let decrement = (id) => {
   console.log(id);
