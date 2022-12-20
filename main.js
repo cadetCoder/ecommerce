@@ -31,6 +31,11 @@ let shopItemsData = [
   }
 ];
 
+let basket = [{
+  id: "",
+  item: ""
+}];
+
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData.map((x) => {
     let { id, name, price, desc, img } = x;
@@ -59,6 +64,11 @@ generateShop();
 let increment = (id) => {
   let selectedItem = id;
   console.log(selectedItem.id);
+
+  basket.push({
+    id: selectedItem.id,
+    item: 1
+  })
 };
 let decrement = (id) => {
   console.log(id);
