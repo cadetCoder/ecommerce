@@ -62,7 +62,7 @@ let generateShop = () => {
 generateShop();
 
 let increment = (id) => {
-  let selectedItem = id;
+  let  selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
 
   if (search === undefined) {
@@ -75,9 +75,22 @@ let increment = (id) => {
     search.item += 1;
   }
 
-  console.log(selectedItem.id);
+  console.log(basket);
 };
+
 let decrement = (id) => {
-  console.log(id);
+  let selectedItem = id;
+  let search = basket.find((x) => x.id === selectedItem.id);
+
+  if (search === 0) {
+    basket.push({
+      id: selectedItem.id,
+      item: 1
+    });
+  } else {
+    search.item -= 1;
+  }
+
+  console.log(basket);
 };
 let update = () => {};
