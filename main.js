@@ -76,6 +76,7 @@ let increment = (id) => {
   }
 
   console.log(basket);
+  update(selectedItem.id);
 };
 
 let decrement = (id) => {
@@ -88,6 +89,7 @@ let decrement = (id) => {
   }
 
   console.log(basket);
+  update();
 };
 
 let update = (id) => {
