@@ -75,6 +75,8 @@ let increment = (id) => {
     search.item += 1;
   }
 
+  localStorage.setItem("data", basket)
+
   console.log(basket);
   update(selectedItem.id);
 };
