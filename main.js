@@ -31,10 +31,7 @@ let shopItemsData = [
   }
 ];
 
-let basket = [{
-  id: "",
-  item: ""
-}];
+let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData.map((x) => {
