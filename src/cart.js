@@ -100,7 +100,11 @@ let removeItem = (id) => {
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
-
+let clearCart = () => {
+  basket = [];
+  generateCartItems();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
 
 let TotalAmount = () => {
   if (basket.length !== 0) {
