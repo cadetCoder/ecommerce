@@ -83,6 +83,14 @@ let decrement = (id) => {
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
+let update = (id) => {
+  let search = basket.find((x) => x.id === id);
+  // console.log(search.item);
+  document.getElementById(id).innerHTML = search.item;
+  calculation();
+  TotalAmount();
+};
+
 let TotalAmount = () => {
   if (basket.length !== 0) {
     let amount = basket
