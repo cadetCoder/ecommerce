@@ -91,6 +91,17 @@ let update = (id) => {
   TotalAmount();
 };
 
+let removeItem = (id) => {
+  let selectedItem = id;
+  // console.log(selectedItem.id);
+  basket = basket.filter((x) => x.id !== selectedItem.id);
+  generateCartItems();
+  TotalAmount();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
+
+
 let TotalAmount = () => {
   if (basket.length !== 0) {
     let amount = basket
